@@ -202,8 +202,20 @@ header .nav--link.active::before {
 /**********************/
 /******* Terms *******/
 /********************/
+.terms__content {
+  list-style: none;
+  counter-reset: list-counter;
+}
+
 .terms__content > li {
   margin-bottom: 3.6rem;
+  counter-increment: list-counter;
+}
+
+.terms__content > li::before {
+  content: counter(list-counter, nums) ". ";
+  font-weight: bold;
+  font-size: 1.4rem;
 }
 
 .terms__content > li::marker {
@@ -218,6 +230,7 @@ header .nav--link.active::before {
   margin-bottom: 1.2rem;
   font-weight: bold;
   font-size: 1.4rem;
+  display: inline-block;
 }
 
 .terms__content > li p {
