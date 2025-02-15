@@ -200,6 +200,47 @@ header .nav--link.active::before {
 }
 
 /**********************/
+/******* Terms *******/
+/********************/
+.terms__content > li {
+  margin-bottom: 3.6rem;
+}
+
+.terms__content > li::marker {
+  font-size: 1.4rem;
+}
+
+.terms__content > li > * {
+  font-size: 1.2rem;
+}
+
+.terms__content > li h2 {
+  margin-bottom: 1.2rem;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.terms__content > li p {
+  margin-bottom: 1.2rem;
+}
+
+.terms__content > li ol {
+  margin-left: 3.2rem;
+  margin-bottom: 1.2rem;
+  list-style: none;
+  counter-reset: list-counter;
+}
+
+.terms__content > li ol li {
+  counter-increment: list-counter;
+}
+
+.terms__content > li ol li::before {
+  content: counter(list-counter, upper-alpha) ") ";
+  font-weight: bold;
+}
+
+/**********************/
 /******* Blog ********/
 /********************/
 .blog__heading {
