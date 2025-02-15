@@ -9,6 +9,7 @@
 /**********************/
 :root {
   --primary-color: #d65033;
+  --secondary-color: #144072;
 
   --green: #2eb841;
   --black: #000;
@@ -199,6 +200,59 @@ header .nav--link.active::before {
   text-transform: uppercase;
 }
 
+/*************************/
+/******* Services *******/
+/***********************/
+.services .main--heading {
+  text-align: center;
+}
+
+.services__content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2.4rem;
+}
+
+.service {
+  text-align: center;
+  padding: 1.6rem 0.8rem;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.service:hover {
+  transform: scale(1.1);
+}
+
+.service span {
+  color: var(--primary-color);
+}
+
+.service__heading {
+  color: var(--secondary-color);
+  font-size: 2.4rem;
+  margin-bottom: 1.2rem;
+}
+
+.service__price {
+  margin-bottom: 2.4rem;
+  font-size: 1.6rem;
+}
+
+.service__price p:not(:last-of-type) {
+  margin-bottom: 1.2rem;
+}
+
+.service__extra {
+  font-style: italic;
+  font-size: 1.6rem;
+}
+
 /**********************/
 /******* Terms *******/
 /********************/
@@ -337,14 +391,20 @@ footer .nav--link {
 /****** Utilities ******/
 /**********************/
 .main--heading {
-  font-size: 3.6rem;
+  font-size: 4.4rem;
   color: var(--primary-color);
   margin-bottom: 2.4rem;
+  font-family: var(--jost-font);
 }
 
 .main--shadow {
   box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
     rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+.box--shadow {
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
 
 .main--padding {
