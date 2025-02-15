@@ -1,0 +1,298 @@
+/* Font Size System */
+/* 10, 12, 14, 16, 18, 20, 24, 30, 36, 44, 52, 62, 74, 86, 98 */
+
+/* Spacing system */
+/* 2, 4, 8, 12, 16, 24, 32, 48, 64, 80, 96, 128 */
+
+/************************/
+/******* Global ********/
+/**********************/
+:root {
+  --primary-color: #d65033;
+
+  --green: #2eb841;
+  --black: #000;
+  --dark-gray: #7a7a7a;
+
+  --text-color: #333;
+  --white: #fff;
+
+  --jost-font: "Jost", serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", serif;
+  color: var(--text-color);
+}
+
+header {
+  position: relative;
+  z-index: 10;
+}
+
+.container {
+  width: 100%;
+  /* max-width: 1440px; */
+  max-width: 960px;
+  margin-inline: auto;
+  padding: 3.2rem;
+}
+
+header .container {
+  padding: 0 3.2rem;
+  background-color: var(--white);
+
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+footer .container {
+  padding: 0 3.2rem;
+}
+
+main {
+  margin-top: 180px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+img {
+  max-width: 100%;
+}
+
+/************************/
+/******* Header ********/
+/**********************/
+.header__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.header__logo {
+  width: 360px;
+}
+
+.header__contact {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.header__contact--icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 2rem;
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__contact--icon:first-of-type {
+  background-color: var(--primary-color);
+}
+.header__contact--icon:last-of-type {
+  background-color: var(--green);
+}
+
+.header__contact--text {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.header__contact--text a {
+  text-decoration: underline;
+}
+
+.header__contact--text p {
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.nav {
+  height: 80px;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+}
+
+.nav__menu {
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
+  height: 100%;
+}
+
+.nav__list {
+  height: 100%;
+}
+
+header .nav--link {
+  font-size: 2rem;
+  font-family: var(--jost-font);
+  display: inline-block;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  position: relative;
+}
+
+header .nav--link::before {
+  content: "";
+  height: 5px;
+  border-radius: 2px;
+  background-color: var(--primary-color);
+  position: absolute;
+  bottom: 1.2rem;
+  left: 50%;
+  width: 0%;
+  transform: translateX(-50%);
+  transition: 0.3s cubic-bezier(0.24, 0.74, 0.58, 1);
+}
+
+header .nav--link:hover::before {
+  width: 100%;
+}
+
+header .nav--link.active::before {
+  width: 100%;
+}
+
+.menu-btn {
+  padding: 1.2rem 1.6rem;
+  font-size: 2rem;
+  border: none;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+
+  display: none;
+}
+
+.menu-btn span {
+  text-transform: uppercase;
+}
+
+/**********************/
+/******* Blog ********/
+/********************/
+.blog__heading {
+  font-size: 3rem;
+  margin-bottom: 1.2rem;
+  font-family: var(--jost-font);
+}
+
+.blog__content:not(:first-of-type) .blog__heading {
+  margin-top: 4.8rem;
+}
+
+.blog__text {
+  font-size: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+
+ol.blog__text {
+  margin-left: 4.8rem;
+}
+
+ol.blog__text li {
+  margin-bottom: 1.6rem;
+}
+
+.blog__content--link {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+/************************/
+/******* Footer ********/
+/**********************/
+footer .container {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 3.2rem;
+  background-color: var(--black);
+  color: var(--dark-gray);
+  font-size: 1.8rem;
+}
+
+footer nav {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  height: 100%;
+}
+
+footer .nav--link {
+  color: var(--dark-gray);
+}
+
+.pipline {
+  width: 1px;
+  height: 50%;
+  background-color: var(--dark-gray);
+}
+
+/************************/
+/***** Animations ******/
+/**********************/
+/* Fade-in effect for new content */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/************************/
+/****** Utilities ******/
+/**********************/
+.main--heading {
+  font-size: 3.6rem;
+  color: var(--primary-color);
+  margin-bottom: 2.4rem;
+}
+
+.main--shadow {
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+.main--padding {
+  padding: 3.2rem;
+}

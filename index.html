@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fonts from google fonts "Jost" and "Poppins" -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome Library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <title>Galaxy Resumes</title>
+  </head>
+  <body>
+    <!--
+    /////////////////////////////////////////////////////////////////////////
+    ///////////////////////////// Header ///////////////////////////////////
+    ///////////////////////////////////////////////////////////////////////
+    -->
+    <header>
+      <div class="container main--shadow">
+        <div class="header__top">
+          <div class="header__logo">
+            <img src="assets/logo.png" alt="Galaxy Resumes Logo" />
+          </div>
+
+          <div class="header__contact">
+            <a
+              href="tel:+919818749023"
+              aria-label="phone"
+              class="header__contact--icon"
+            >
+              <i class="fa-solid fa-phone"></i>
+            </a>
+            <a
+              href="whatsapp://send?phone=+919818749023/"
+              aria-label="whatsapp"
+              class="header__contact--icon"
+            >
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <div class="header__contact--text">
+              <a href="">+91-9818749023</a>
+              <p>7 days a week</p>
+            </div>
+          </div>
+        </div>
+
+        <nav class="nav">
+          <ul class="nav__menu">
+            <li class="nav__list">
+              <a
+                class="nav--link active"
+                data-page="home"
+                href="pages/home.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav__list">
+              <a class="nav--link" data-page="samples" href="pages/samples.html"
+                >Samples</a
+              >
+            </li>
+            <li class="nav__list">
+              <a class="nav--link" data-page="pricing" href="pages/pricing.html"
+                >Pricing</a
+              >
+            </li>
+            <li class="nav__list">
+              <a class="nav--link" data-page="reviews" href="pages/reviews.html"
+                >Reviews</a
+              >
+            </li>
+            <li class="nav__list">
+              <a
+                class="nav--link"
+                data-page="services"
+                href="pages/services.html"
+                >Other Services</a
+              >
+            </li>
+            <li class="nav__list">
+              <a class="nav--link" data-page="contact" href="pages/contact.html"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+          <button class="menu-btn">
+            <i class="fa-solid fa-x menu-btn--close"></i>
+            <i class="fa-solid fa-bars menu-btn--open"></i>
+            <span>Menu</span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <!--
+    /////////////////////////////////////////////////////////////////////////
+    ///////////////////////////// Content ///////////////////////////////////
+    ///////////////////////////////////////////////////////////////////////
+    -->
+    <main id="content"></main>
+
+    <!--
+    /////////////////////////////////////////////////////////////////////////
+    ///////////////////////////// Footer ///////////////////////////////////
+    ///////////////////////////////////////////////////////////////////////
+    -->
+    <footer>
+      <div class="container main--shadow">
+        <p class="footer__text">Established - 2013 | GalaxyResumes.com</p>
+        <nav>
+          <a class="nav--link" data-page="terms" href="pages/terms.html"
+            >Terms and Conditions</a
+          >
+          <div class="pipline"></div>
+          <a class="nav--link" data-page="blog" href="pages/blog.html">Blog</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
