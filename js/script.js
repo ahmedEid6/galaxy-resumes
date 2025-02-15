@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
           history.pushState({ page }, "", `#${page}`);
 
           reloadScripts();
+          window.scrollTo(0, 0);
         })
         .catch((error) => {
           console.error("Error loading page:", error);

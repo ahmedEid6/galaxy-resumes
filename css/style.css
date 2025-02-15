@@ -236,7 +236,7 @@ header .nav--link.active::before {
 }
 
 .terms__content > li ol li::before {
-  content: counter(list-counter, upper-alpha) ") ";
+  content: counter(list-counter, lower-alpha) ") ";
   font-weight: bold;
 }
 
