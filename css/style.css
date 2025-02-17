@@ -14,6 +14,8 @@
   --green: #2eb841;
   --black: #000;
   --dark-gray: #7a7a7a;
+  --blue-sky: #00d0ff;
+  --warm-orange: #ffba00;
 
   --text-color: #333;
   --white: #fff;
@@ -251,6 +253,80 @@ header .nav--link.active::before {
 .service__extra {
   font-style: italic;
   font-size: 1.6rem;
+}
+
+/************************/
+/******* Contact *******/
+/**********************/
+.contact .main--heading {
+  text-align: center;
+}
+
+.contact__text {
+  color: #144072;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 6.4rem;
+}
+
+.contact__platform--heading {
+  font-size: 2rem;
+  margin-bottom: 1.6rem;
+}
+
+.contact__platform--connect {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 4.8rem;
+}
+
+.contact__platform i {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #000;
+  color: var(--white);
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact__platform--connect:first-of-type i {
+  background-color: var(--blue-sky);
+}
+
+.contact__platform--connect:nth-of-type(2) i {
+  background-color: var(--green);
+}
+
+.contact__platform--connect:nth-of-type(3) i {
+  background-color: var(--warm-orange);
+}
+
+.contact__platform a {
+  text-decoration: underline;
+  font-size: 1.6rem;
+}
+
+.contact__address {
+  padding-top: 4.8rem;
+  border-top: 2px solid var(--text-color);
+}
+
+.contact__address h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2.4rem;
+}
+
+.contact__address p {
+  text-align: center;
+  color: var(--dark-gray);
+  font-size: 1.8rem;
+  margin-bottom: 1.6rem;
 }
 
 /**********************/
