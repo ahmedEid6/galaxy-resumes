@@ -278,17 +278,17 @@ header .nav--link.active::before {
 .contact__platform--connect {
   display: flex;
   align-items: center;
-  gap: 1.2rem;
+  gap: 2.4rem;
   margin-bottom: 4.8rem;
 }
 
 .contact__platform i {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   background-color: #000;
   color: var(--white);
-  font-size: 2rem;
+  font-size: 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -308,25 +308,25 @@ header .nav--link.active::before {
 
 .contact__platform a {
   text-decoration: underline;
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 
 .contact__address {
   padding-top: 4.8rem;
-  border-top: 2px solid var(--text-color);
+  border-top: 2px solid #ccc;
 }
 
 .contact__address h3 {
   text-align: center;
   font-size: 2rem;
-  margin-bottom: 2.4rem;
+  margin-bottom: 3.2rem;
 }
 
 .contact__address p {
   text-align: center;
   color: var(--dark-gray);
-  font-size: 1.8rem;
-  margin-bottom: 1.6rem;
+  font-size: 1.6rem;
+  margin-bottom: 2.4rem;
 }
 
 /**********************/
