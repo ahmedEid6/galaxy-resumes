@@ -12,13 +12,14 @@
   --secondary-color: #144072;
 
   --green: #2eb841;
-  --black: #000;
-  --dark-gray: #7a7a7a;
   --blue-sky: #00d0ff;
   --warm-orange: #ffba00;
 
   --text-color: #333;
   --white: #fff;
+  --dark-gray: #7a7a7a;
+  --light-gray: #ddd;
+  --black: #000;
 
   --jost-font: "Jost", serif;
 }
@@ -200,6 +201,54 @@ header .nav--link.active::before {
 
 .menu-btn span {
   text-transform: uppercase;
+}
+
+/*********************/
+/******* Home *******/
+/*******************/
+.home .main--heading {
+  text-align: center;
+  padding-block: 1.6rem 1.2rem;
+}
+
+.home__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3.6rem 2.4rem;
+}
+
+.home__grid--item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.6rem;
+}
+
+.home__grid--icon {
+  width: 45px;
+  height: 45px;
+  background-color: var(--light-gray);
+  border-radius: 50%;
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home__grid--icon i {
+  font-size: 1.8rem;
+  color: var(--secondary-color);
+}
+
+.home__item--content h3 {
+  font-size: 1.6rem;
+  color: var(--secondary-color);
+  margin-bottom: 0.8rem;
+}
+
+.home__item--content p {
+  font-size: 1.4rem;
+  line-height: 1.7;
 }
 
 /*************************/
